@@ -23,11 +23,12 @@ function lakukanLooping(arrPegawai) {
 
       Contoh: ["Aisyah Nirmala", "Mansur Faisal", ...]
   */
-  let hasilLooping = null;
-  for(let jumlah = 0; jumlah < arrPegawai.length; jumlah ++)
+  let hasilLooping = [];
+  for(const jml of dataYangAkanDilooping)
   {
-    hasilLooping += `${ dataYangAkanDilooping[jumlah].namaDepan, dataYangAkanDilooping[jumlah].namaBelakang }`;
+    hasilLooping.push(jml.namaDepan +" "+jml.namaBelakang);
   }
+  
   /*
     TODO 2: Buatlah sebuah variabel bernama "jumlahPria"
       yang berisi jumlah pria dari masing masing pegawai
